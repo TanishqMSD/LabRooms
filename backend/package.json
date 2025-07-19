@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Labrooms Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Tanishq",
+    "Arav",
+    "Chirag",
+    "Siddhi"
+  ],
+  "author": "",
+  "license": "ISC"
+}
