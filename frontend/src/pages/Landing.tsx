@@ -24,39 +24,24 @@ const Landing = () => {
   }
 
   return (
-    <div className="min-h-svh bg-[#121212] text-white">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex min-h-svh flex-col md:flex-row gap-8 md:gap-0">
-          {/* Left */}
-          <div className="flex flex-col justify-center md:w-1/2 py-12 md:py-20 md:pr-8">
-            <div className="mb-8 text-[#6366f1] flex items-center gap-3">
-              <img src={titlelogo} alt="Labrooms Logo" className="h-10 w-10 object-contain" />
-              <h2 className="text-2xl font-bold">LABROOMS</h2>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Welcome to Labrooms
-            </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8">
-              Create or join a room to save your lab files — code, PDFs, and links — instantly.
-            </p>
-          </div>
-          {/* Right */}
-          <div className="flex flex-col md:w-1/2 py-6 md:py-20 md:pl-8 relative">
-            <div className="flex flex-col items-center justify-center h-full md:mt-0">
-              <div className="space-y-6 w-full max-w-md">
-                <Button className="w-full py-6 text-lg bg-[#6366f1] hover:bg-[#6366f1]/90 text-white" onClick={() => setDialogOpen(true)}>
-                  Create Room
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full py-6 text-lg border-[#6366f1] text-[#6366f1] hover:bg-[#6366f1]/10 hover:text-white"
-                  onClick={() => navigate('/room/demo123')}
-                >
-                  Join Room
-                </Button>
-              </div>
-            </div>
-          </div>
+    <div className="min-h-svh bg-[#121212] flex items-center justify-center">
+      <div className="w-full max-w-md mx-auto bg-[#18181b] rounded-2xl shadow-2xl p-8 flex flex-col items-center">
+        <div className="flex flex-col items-center mb-8">
+          <img src={titlelogo} alt="Labrooms Logo" className="h-32 w-32 object-contain mb-4 drop-shadow-lg" />
+          <h1 className="text-5xl font-extrabold text-center text-[#6366f1] tracking-tight">Labrooms</h1>
+        </div>
+        <p className="text-lg text-center text-gray-300 mb-8 font-medium">Collaborate, code, and learn together.<br/>Create or join a room to share code, notes, and files instantly.</p>
+        <div className="flex flex-col gap-4 w-full">
+          <Button className="w-full py-4 text-lg bg-[#6366f1] hover:bg-[#6366f1]/90 text-white font-semibold shadow-md" onClick={() => setDialogOpen(true)}>
+            Create Room
+          </Button>
+          <Button
+            variant="outline"
+            className="w-full py-4 text-lg border-[#6366f1] text-[#6366f1] hover:bg-[#6366f1]/10 hover:text-white font-semibold shadow-md"
+            onClick={() => navigate('/room/demo123')}
+          >
+            Join Room
+          </Button>
         </div>
       </div>
       {/* Room Creation Dialog */}
